@@ -1,26 +1,26 @@
 import java.util.Scanner;
 
-public class Task8_1
+public class Task8_9
     {
         public static Scanner reader = new Scanner(System.in);
 
         public static void main(String[] args)
             {
-                System.out.println("Введи целое число=");
-
                 int a = reader.nextInt();
+                int b, c;
 
-                if (a%2==0)
+                if (a%2 != 1)
                     {
-                        a++;
-                        System.out.println("Yes");
+                        b = a/2;
+                        c=(a+b)%10;
+                        System.out.println(a+b+c);
                     }
                 else
                     {
-                        a--;
-                        System.out.println("No");
+                        b=a/2+1;
+                        c=(a*b)%10;
+                        System.out.println(c-a-b);
                     }
-                System.out.println(a);
 
                 reader.close();
             }

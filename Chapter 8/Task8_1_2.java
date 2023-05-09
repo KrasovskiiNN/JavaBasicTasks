@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Task8_1
+public class Task8_1_2
     {
         public static Scanner reader = new Scanner(System.in);
 
@@ -10,7 +10,7 @@ public class Task8_1
 
                 int a = reader.nextInt();
 
-                if (a%2==0)
+                if (a%3==0)
                     {
                         a++;
                         System.out.println("Yes");
